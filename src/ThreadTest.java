@@ -1,3 +1,7 @@
+import java.io.IOException;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
 
 
 public class ThreadTest {
@@ -11,7 +15,16 @@ public class ThreadTest {
         Thread.sleep(3*1000);
         
         myThread.interrupt();
-        
+     
+       try {
+        Socket mSocket = new Socket("",2332);
+    } catch (UnknownHostException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    } catch (IOException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+    }
     }
     
     
