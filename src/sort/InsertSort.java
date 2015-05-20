@@ -40,10 +40,10 @@ public class InsertSort {
 	
 	
 	
-	
+	//这样是行不通的 基础数据类型传递的是值 而不是地址
 	private static void changePosition(int arrays[] ,int i ,int j){
 		int temp = i;
-		i = j;
+		arrays[i] = arrays[j];
 		j = temp;
 	}
 }

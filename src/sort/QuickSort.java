@@ -2,10 +2,6 @@ package sort;
 import java.util.Arrays;
 
 public class QuickSort{
-	
-	
-	
-
     
     
     static int getMiddle(Integer[] list, int low, int high) {  
