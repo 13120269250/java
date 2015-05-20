@@ -1,6 +1,9 @@
+import java.util.Arrays;
+
 
 public class Ascall {
     
+	
     public static void main(String args[] ){
         char m = '\02';
         System.out.println(byteToChar(charToByte(m)));
@@ -8,7 +11,7 @@ public class Ascall {
         String good = "good";
         byte[] bGod = good.getBytes();
         byte [] myTag =endTag.getBytes();
-        System.out.println(myTag);
+        System.out.println(Arrays.toString(myTag));
     }
     public static byte[] charToByte(char c) { 
         byte[] b = new byte[2]; 
