@@ -12,6 +12,8 @@ public class Get {
 
         long t0 = System.currentTimeMillis();
 
+        String mDataString = "2323";
+      
         byte[] b = new byte[8192];
         int n, tot = 0;
         long t1 = t0;
